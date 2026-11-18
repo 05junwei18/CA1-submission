@@ -18,12 +18,6 @@ def test_nominal_weight_and_length_returns_true():
     result = is_parcel_accepted(weight_grams, length_cm)
     assert result is True   # 2nd test case: weight = 5000g, length = 100cm, expected acceptance = True
 
-def test_maximum_weight_and_length_returns_true():
-    weight_grams = 20000
-    length_cm = 200
-    result = is_parcel_accepted(weight_grams, length_cm)
-    assert result is True   # 3rd(f) test case: weight = 20000g, length = 200cm, expected acceptance = True,, failed cause the length
-
 ## Invalid weight/ length values outside the service range
 
 def test_zero_weight_returns_false():

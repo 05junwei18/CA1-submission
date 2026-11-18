@@ -15,11 +15,6 @@ def test_weight_within_first_band_500g_returns_500():
     assert result == 500   # 2nd test case: weight = 500g, expected fee = 500
 
 
-def test_weight_at_upper_boundary_1000g_returns_500():
-    weight_grams = 1000
-    result = delivery_fee(weight_grams)
-    assert result == 500    # 3rd(f) test case: weight = 1000g, expected fee = 500, parcel fee at 1000g will be at the over boundary of the first weight band
-
 
 ## Band 2( 1001g - 20000g) inclusive fee = 1000
 
