@@ -10,7 +10,7 @@ jobs:
       run: echo "Display Student - Teo Jun Wei"
 
     - name: Display Module
-      run: echo "Display Module - C339 Software Testing and Analytics
+      run: echo "Display Module - C339 Software Testing and Analytics"
 
     - name: Display Message
       run: echo "Display my GitHub Actions workflow is running automatically."
