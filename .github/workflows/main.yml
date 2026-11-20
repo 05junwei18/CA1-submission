@@ -1,17 +1,23 @@
-name: Student Information Workflow
+name: Run pytest
 
 on: push
 
 jobs:
-  display-info:
+  test:
     runs-on: ubuntu-latest
+
     steps:
-    - name: Display Student Name
-      run: echo "Display Student - Teo Jun Wei"
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-    - name: Display Module
-      run: echo "Display Module - C339 Software Testing and Analytics"
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
 
-    - name: Display Message
-      run: echo "Display my GitHub Actions workflow is running automatically."
+      - name: Install pytest
+        run: pip install pytest
+
+      - name: Run pytest
+        run: python -m pytest
        
